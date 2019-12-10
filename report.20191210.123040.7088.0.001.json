@@ -1,0 +1,396 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191210.123040.7088.0.001.json",
+    "dumpEventTime": "2019-12-10T12:30:40Z",
+    "dumpEventTimeStamp": "1575981040677",
+    "processId": 7088,
+    "cwd": "/home/ec2-user/aws-node-game/socket-phaser-hello-world",
+    "commandLine": [
+      "node",
+      "/home/ec2-user/.nvm/versions/node/v13.3.0/lib/node_modules/pm2/lib/ProcessContainerFork.js"
+    ],
+    "nodejsVersion": "v13.3.0",
+    "glibcVersionRuntime": "2.26",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.3.0",
+      "v8": "7.9.317.25-node.23",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.3.0/node-v13.3.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.3.0/node-v13.3.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.14.152-127.182.amzn2.x86_64",
+    "osVersion": "#1 SMP Thu Nov 14 17:32:43 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz",
+        "speed": 2400,
+        "user": 3733900,
+        "nice": 49000,
+        "sys": 687400,
+        "idle": 977363800,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "06:a5:3f:eb:ec:8e",
+        "address": "172.31.25.232",
+        "netmask": "255.255.240.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "06:a5:3f:eb:ec:8e",
+        "address": "fe80::4a5:3fff:feeb:ec8e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "ip-172-31-25-232.us-east-2.compute.internal"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b22b05",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x00000000009f371c",
+      "symbol": "node::OnFatalError(char const*, char const*) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000b5865e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000b589d9",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000d064e5",
+      "symbol": " [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000d06b76",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000d15d8f",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000d16c15",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000d196ac",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x0000000000ce01a4",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x000000000102d4ee",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    },
+    {
+      "pc": "0x00000000013ad8f9",
+      "symbol": " [node /home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 519008256,
+    "totalCommittedMemory": 518330496,
+    "usedMemory": 513280712,
+    "availableMemory": 11623112,
+    "memoryLimit": 528482304,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2096872,
+        "capacity": 1047424,
+        "used": 62240,
+        "available": 985184
+      },
+      "old_space": {
+        "memorySize": 499257344,
+        "committedMemory": 499124552,
+        "capacity": 496955712,
+        "used": 496839256,
+        "available": 116456
+      },
+      "code_space": {
+        "memorySize": 954368,
+        "committedMemory": 799616,
+        "capacity": 632960,
+        "used": 632960,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1839104,
+        "committedMemory": 1677984,
+        "capacity": 1184640,
+        "used": 1184640,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 14548992,
+        "committedMemory": 14548992,
+        "capacity": 14525792,
+        "used": 14525792,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 251.319,
+    "kernelCpuSeconds": 26.054,
+    "cpuConsumptionPercent": 1.29251,
+    "maxRss": 618291200,
+    "pageFaults": {
+      "IORequired": 38,
+      "IONotRequired": 3670018
+    },
+    "fsActivity": {
+      "reads": 14872,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 176.138,
+    "kernelCpuSeconds": 25.1003,
+    "cpuConsumptionPercent": 0.937736,
+    "fsActivity": {
+      "reads": 14864,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "kill_retry_time": "100",
+    "windowsHide": "true",
+    "username": "ec2-user",
+    "treekill": "true",
+    "automation": "true",
+    "pmx": "true",
+    "instance_var": "NODE_APP_INSTANCE",
+    "watch": "false",
+    "autorestart": "true",
+    "vizion": "true",
+    "merge_logs": "true",
+    "env": "[object Object]",
+    "namespace": "default",
+    "name": "index",
+    "node_args": "",
+    "pm_exec_path": "/home/ec2-user/aws-node-game/socket-phaser-hello-world/server/index.js",
+    "pm_cwd": "/home/ec2-user/aws-node-game/socket-phaser-hello-world",
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "instances": "1",
+    "pm_out_log_path": "/home/ec2-user/.pm2/logs/index-out.log",
+    "pm_err_log_path": "/home/ec2-user/.pm2/logs/index-error.log",
+    "pm_pid_path": "/home/ec2-user/.pm2/pids/index-0.pid",
+    "km_link": "false",
+    "vizion_running": "false",
+    "NODE_APP_INSTANCE": "0",
+    "PM2_INTERACTOR_PROCESSING": "true",
+    "PM2_USAGE": "CLI",
+    "_": "/home/ec2-user/.nvm/versions/node/v13.3.0/bin/pm2",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+    "NVM_BIN": "/home/ec2-user/.nvm/versions/node/v13.3.0/bin",
+    "SSH_CONNECTION": "68.53.33.157 45604 172.31.25.232 22",
+    "LOGNAME": "ec2-user",
+    "HOME": "/home/ec2-user",
+    "SHLVL": "1",
+    "HISTCONTROL": "ignoredups",
+    "LANG": "en_US.UTF-8",
+    "PWD": "/home/ec2-user/aws-node-game/socket-phaser-hello-world",
+    "PATH": "/home/ec2-user/.nvm/versions/node/v13.3.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin",
+    "MAIL": "/var/spool/mail/ec2-user",
+    "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+    "USER": "ec2-user",
+    "NVM_DIR": "/home/ec2-user/.nvm",
+    "LC_ALL": "en_US.UTF-8",
+    "SSH_TTY": "/dev/pts/0",
+    "SSH_CLIENT": "68.53.33.157 45604 22",
+    "HISTSIZE": "1000",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "NVM_CD_FLAGS": "",
+    "HOSTNAME": "ip-172-31-25-232.us-east-2.compute.internal",
+    "XDG_SESSION_ID": "158",
+    "PM2_HOME": "/home/ec2-user/.pm2",
+    "unique_id": "14cffe69-02eb-427e-8771-b52e05f32d6c",
+    "status": "launching",
+    "pm_uptime": "1575959579750",
+    "axm_actions": "",
+    "axm_monitor": "[object Object]",
+    "axm_options": "[object Object]",
+    "axm_dynamic": "[object Object]",
+    "created_at": "1575959579750",
+    "pm_id": "0",
+    "restart_time": "0",
+    "unstable_restarts": "0"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 4096,
+      "hard": 4096
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 3793,
+      "hard": 3793
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib64/libdl.so.2",
+    "/lib64/libstdc++.so.6",
+    "/lib64/libm.so.6",
+    "/lib64/libgcc_s.so.1",
+    "/lib64/libpthread.so.0",
+    "/lib64/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/canvas.node",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpixman-1.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libcairo.so.2",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpng16.so.16",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libz.so.1",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpangocairo-1.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpango-1.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgobject-2.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libglib-2.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libfreetype.so.6",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/librsvg-2.so.2",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgio-2.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgdk_pixbuf-2.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libjpeg.so.62",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgif.so.7",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libfontconfig.so.1",
+    "/lib64/librt.so.1",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpangoft2-1.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libfribidi.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libffi.so.6",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgthread-2.0.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libharfbuzz.so.0",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libpcre.so.1",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libexpat.so.1",
+    "/lib64/libuuid.so.1",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libgmodule-2.0.so.0",
+    "/lib64/libresolv.so.2",
+    "/lib64/libmount.so.1",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libcroco-0.6.so.3",
+    "/home/ec2-user/aws-node-game/socket-phaser-hello-world/node_modules/canvas/build/Release/libxml2.so.2",
+    "/lib64/libblkid.so.1",
+    "/lib64/libselinux.so.1",
+    "/lib64/libnss_files.so.2",
+    "/lib64/libnss_dns.so.2"
+  ]
+}
